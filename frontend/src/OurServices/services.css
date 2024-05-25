@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.services_container_all{
+    height:600px;
+    width:100%;
+}
+
+
+.service_container{
+}
+
+.service_container .headers{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.service_container .headers .header{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 600; 
+    height:100px;
+    max-width: 80%;
+    line-height: 45px;
+}
+
+.service_container .headers h3{
+    color:yellow;
+    text-align: center;
+}
+
+.service_container .headers .subheader{
+    color:rgb(145,145,145);
+    font-weight: initial;
+    font-size:1.1rem;
+    text-align: center;
+    max-width:50%;
+}
+
+.service_container .services{
+    height:450px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:150px;
+}
+
+
+.service_container .services .service{
+    height:340px;
+    width:340px;
+    background-color: white;
+    border-radius: 12px;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 15px 20px 60px 2px rgba(0, 0, 0, 0.7);
+    transform: scale(1);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.service_container .services .service:hover{
+    transform:scale(1.1);
+}
+
+
+.service_container .services .service .servicehead{
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+
+.service_container .services .service .service_content{
+    font-size:.856rem;
+    font-weight: 500;
+    color:rgb(145,145,145);
+    margin-top:40px;
+    line-height: 23px;
+    padding:4px;
+}
+
+
+
+@media (max-width:767px){
+    .services_container_all{
+
+    }
+
+    .services_container_all .service_container{
+        background-color: transparent;
+    }
+
+    .service_container .headers{
+
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+
+    .service_container .headers .header{
+        font-size:1.9rem;
+        line-height: 29px;
+
+        width: 100%;
+        max-width: 100%;
+       
+    }
+
+    .service_container .headers .subheader{
+        max-width: 100%;
+        font-size:.89rem;
+
+    }
+
+
+    .service_container .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:150vh;
+
+        align-items: center;
+        margin-top: -100px;
+        gap:40px;
+    }
+
+    .service_container .services .service{
+        height:300px;
+        width:300px;
+        position: relative !important;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding:25px;
+    }
+
+    .service_container .services .service .service_content{
+        margin-top: 1px;
+    }
+    
+
+    
+}
