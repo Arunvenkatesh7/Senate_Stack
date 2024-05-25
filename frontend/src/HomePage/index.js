@@ -7,7 +7,7 @@ import Brochere from '../Brochere';
 
 const HomePage = () => {
 
-    const [isVisible,setIsVisible] =useState(true);
+    const [isVisible,setIsVisible] =useState(false);
 
 
     const showHideNavbar =() =>{

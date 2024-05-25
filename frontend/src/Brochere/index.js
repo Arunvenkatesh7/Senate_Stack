@@ -2,7 +2,7 @@ import React from 'react'
 import './brochere.css'
 import {RiDownloadFill} from "@remixicon/react";
 import './about_us.css'
-
+import './excellence.css'
 
 const Brochere = () => {
   return (
@@ -13,8 +13,9 @@ const Brochere = () => {
             <div className="image_container">   
                 <div className="image"></div>
             </div>
+
             <div className="content_container">
-                <div className="container">
+                <div className="con_container">
                     <div className="con_header">Setting World Class Benchmarks of Construction Excellence</div>
                     <div className="con_subheader">Building Dreams - <span>With Us For You</span></div>
                 
@@ -59,6 +60,49 @@ const Brochere = () => {
                 </div>
 
             </div>
+
+
+        </div>
+
+
+
+
+        <div className="excellence">
+            <div className="excellence_container">
+                <div className="headers">
+                    <div className="header">THE LEGACIES OF EXCELLENCE</div>
+                    <div className="subheader"><p>"Excellence in Construction: Our Vision and Mission Unite in Delivering Remarkable and Best&#32;&#32;Projects with Precision, Innovation, and Unparalleled Client Satisfaction."</p></div>
+                </div>
+
+                <div className="excellence_content">
+                    <div className="e_boxes">
+                        <p className="b_content">To emerge as a leader in the South
+                         Indian construction landscape by offering solutions beyond customer expectations</p>
+                        <div className="b_image1"></div>
+                        <div className="b_head">Vision</div>
+                    </div>
+
+                    <div className="e_boxes">
+                        <p className="b_content"> 
+To transform our engineering excellence, construction innovation into tangible benefits for our customers.</p>
+                        <div className="b_image2"></div>
+                        <div className="b_head">Mission</div>
+                    </div>
+
+                    <div className="e_boxes">
+                        <p className="b_content">TUnveiling Masterful Craftsmanship, and
+                         an Unswerving Dedication to Client-Centricity</p>
+                        <div className="b_image3"></div>
+                        <div className="b_head">Excellency</div>
+                    </div>
+
+
+                    
+                   
+                </div>
+            </div>
+
+           
 
 
         </div>

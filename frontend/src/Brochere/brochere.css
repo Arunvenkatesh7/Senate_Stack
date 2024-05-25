@@ -12,6 +12,7 @@
 .brochere_container{
     height:70vh;
     width:100%;
+    
 }
 
 
@@ -75,5 +76,44 @@
    border-radius: 30px;
 }
 
+
+
+@media (max-width:767px){
+    .brochere_container{
+
+        height:100vh;
+    }
+
+    .brochere_container .container{
+     
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .brochere_container .container .brochere_content{
+        display: flex;
+        margin-top:-20px;
+        height:60%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+
+    .brochere_container .container .brochere_image{
+       
+        width:100%;
+        height:40%;
+    }
+
+
+    .brochere_container .container .brochere_content .content{
+        display: flex;
+        background-color: azure;
+        margin-left: 0px !important;
+        height: 100%;
+        width:100%;
+    }
+}
 
 

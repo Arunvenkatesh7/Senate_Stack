@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+
+.excellence{
+ 
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.excellence_container {
+    width:90%;
+    height:70%;
+ 
+
+}
+
+
+.excellence_container .headers{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.excellence_container .headers .header{
+    font-size: 2.6rem;
+    font-weight: 700;
+
+}
+
+
+.excellence_container .headers .subheader{
+    font-size: 1rem;
+    color:gray;
+    max-width: 50%;
+    margin-top: -20px;
+}
+
+.excellence_container .excellence_content{
+
+    height:100%;
+    width:100%;
+    padding:140px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.excellence_container .excellence_content .e_boxes{
+    height:320px;
+    width:300px;
+    background-color: rgb(50, 49, 49);
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    gap:27px;
+    align-items: center;
+    outline:none;
+    position: relative;
+    cursor:pointer;
+}
+
+
+.excellence_container .excellence_content .e_boxes:before{
+    content:"";
+    height:10px;
+    width:10px;
+    background: linear-gradient(to top,rgb(255, 243, 50,.5),rgb(50, 49, 49,.5));
+    position: absolute;
+    bottom:0;
+    left:0;
+    height: 0;
+    width:100%;
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+}
+
+
+.excellence_container .excellence_content .e_boxes:hover::before{
+    visibility: visible;
+    bottom: 0;
+    height: 100%;
+}
+
+
+.excellence_container .excellence_content .e_boxes .b_content{
+    color:gray;
+    font-size: .82rem;
+    max-width: 90%;
+}
+
+.excellence_container .excellence_content .e_boxes .b_image1{
+    height:70%;
+    background: url('../Images/consimage.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:50%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.excellence_container .excellence_content .e_boxes .b_image2{
+    height:70%;
+    background: url('../Images/consimage.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:50%;
+    border-radius: 50%;
+}
+
+
+.excellence_container .excellence_content .e_boxes .b_image3{
+    height:70%;
+    background: url('../Images/consimage.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:50%;
+    border-radius: 50%;
+}
+
+.excellence_container .excellence_content .e_boxes .b_head{
+    color:white;
+    font-size: 1rem;
+    font-weight:600;
+    margin-top:-10px;
+
+}
+
+
+
+@media (max-width:767px){
+    .excellence{
+    margin-top: -200px;  
+    }
+
+    .excellence_container{
+     
+        width:100%;
+        padding:8px;
+        position: relative;
+       
+        
+    }
+
+    .excellence_container .headers{
+    
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    .excellence_container .headers .header{
+        font-size: 2.3rem;
+        line-height: 39px;
+    
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-wrap: break-word;
+    }
+
+    .excellence_container .headers .subheader{
+        
+        max-width: 100%;
+        margin-top:10px;
+        font-size: .86rem;
+    }
+
+
+    .excellence_container .excellence_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height:160vh;
+            gap:23px;
+            margin-top: -100px;
+            
+        
+            
+    }
+
+    .excellence_container .excellence_content .e_boxes{
+        height: 800px !important;
+    }
+}
