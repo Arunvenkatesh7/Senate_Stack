@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.aboutus{
+    background-color: antiquewhite;
+    width:100%;
+    height:90vh;
+}
+
+
+.aboutus .aboutus_image{
+    background: url('../Images/Image3.jpg');
+    height:100%;
+    width:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+
+.aboutus .aboutus_content{
+    background-color: yellow;
+    position: absolute;
+    z-index: 1;
+    top:40px;
+    right:0;
+    height:80%;
+    width:55%;
+    padding:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:23px;
+}
+
+.aboutus .aboutus_content .header{
+    font-size:1.6rem;
+    font-weight: 670;
+    text-align: end;
+    max-width: 100%;
+    padding:0px;
+    
+}
+
+
+.aboutus .aboutus_content .content{
+    color:rgb(52, 49, 49);
+    font-size: .85rem;
+    line-height: 33px;
+    position: relative;
+    padding:7px;
+}
+
+
+.aboutus .aboutus_content .contactus_button{
+    padding:12px;
+    background-color: black;
+    color:yellow;
+    width:30%;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 23px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    border:none;
+    cursor:pointer;
+}
+
+.aboutus .aboutus_content .contactus_button:hover {
+    background-color: yellow;
+    color:black;
+    border:2px solid black;
+}
+
+
+@media(max-width:767px){
+    .aboutus{
+        background-color: aqua;
+    }
+   
+
+    .aboutus_content .aboutus_image{
+        width:100%;
+    }
+
+    .aboutus_content{
+        width:80% !important;
+        display: flex;
+        flex-direction: column;
+        padding:27px !important
+    }
+    .aboutus_content .header{
+
+    }
+
+    .aboutus_content .content{
+        line-height: 25px !important;
+    }
+
+    .aboutus_content .contactus_button{
+        padding:12px !important;
+        width:50% !important;
+    }
+}
+
+
+
