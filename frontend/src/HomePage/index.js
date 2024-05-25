@@ -4,6 +4,8 @@ import {RiHammerFill, RiHomeHeartFill, RiUser2Line } from "@remixicon/react";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Brochere from '../Brochere';
+import Footer from '../Footer';
+
 
 const HomePage = () => {
 
@@ -67,6 +69,7 @@ const HomePage = () => {
 
 
     <Brochere/>
+    <Footer/>
     
     </>
   )

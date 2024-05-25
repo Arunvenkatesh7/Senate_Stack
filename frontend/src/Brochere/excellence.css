@@ -65,7 +65,7 @@
 .excellence_container .excellence_content .e_boxes{
     height:320px;
     width:300px;
-    background-color: rgb(50, 49, 49);
+    background-color: #2d2d2d;
     padding:30px;
     display: flex;
     flex-direction: column;
