@@ -35,14 +35,14 @@ const HomePage = () => {
 
             <ul className="nav_links">              
                 <li><Link className='link active' to="/">Home</Link></li>
-                <li><Link className='link' to="/projects">Project</Link></li>
-                <li><Link className='link' to="/about">About</Link></li>
-                <li><Link className='link' to="/contact">Contact</Link></li>
+                <li><Link className='link' to="/services">Project</Link></li>
+                <li><Link className='link' to="/aboutus">About</Link></li>
+                <li><Link className='link' to="/contact" >Contact</Link></li>
             </ul>
     {isVisible?<ul className="mobile_nav_links">              
                 <li><Link className='link active' to="/">Home</Link></li>
-                <li><Link className='link' to="/projects">Project</Link></li>
-                <li><Link className='link' to="/about">About</Link></li>
+                <li><Link className='link' to="/services">Project</Link></li>
+                <li><Link className='link' to="/aboutus">About</Link></li>
                 <li><Link className='link' to="/contact">Contact</Link></li>
             </ul>:<></>}
             
