@@ -12,7 +12,7 @@ const NavBar = () => {
         setIsVisible(!isVisible);
       }
 
-
+      
 
   return (
     <>

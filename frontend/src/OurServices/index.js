@@ -1,6 +1,9 @@
 import React from 'react'
 import './services.css'
 import NavBar from '../NavBar'
+import Gallery from '../Gallery'
+import Footer from '../Footer'
+
 
 const Services = () => {
   return (
@@ -46,7 +49,14 @@ const Services = () => {
         </div>
       </div>
     
-      </div>  
+      </div> 
+
+
+
+      <Gallery/> 
+      <Footer/>
+
+    
     
     </>
   )
