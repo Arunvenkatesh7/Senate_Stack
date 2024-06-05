@@ -3,6 +3,8 @@ import { RiMailCheckFill, RiPhoneFill, RiUserLocationFill } from "@remixicon/rea
 import './contact.css'
 import './vtr.css'
 import NavBar from '../NavBar';
+import FormElement from '../FormElement';
+import Footer from '../Footer'
 
 const ContactUs = () => {
   return (
@@ -78,9 +80,9 @@ Making your vision become a reality</div>
 
 
 
+        <FormElement/>
 
-
-
+      <Footer/>
 
 
     </>

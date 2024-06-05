@@ -45,7 +45,14 @@ const HomePage = () => {
                 <li><Link className='link' to="/aboutus">About</Link></li>
                 <li><Link className='link' to="/contact">Contact</Link></li>
             </ul>:<></>}
-            
+
+        <div className="slider_datas">
+            <div className="slider_container">
+                <div className="slider_slogan">WE ARE HERE FOR <span className='span_element'>BUILD</span> YOU UP</div>
+                <div className="slider_content">BUILDING EXCELLENCE FROM GROUND UP</div>
+                <div className="slider_button">Let's build</div>
+            </div>
+        </div>            
 
 
 
@@ -57,6 +64,10 @@ const HomePage = () => {
         </div>
         </div>
     </div>
+
+
+
+      
     
 
 </div> 
