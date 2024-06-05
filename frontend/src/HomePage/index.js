@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import {RiHammerFill, RiHomeHeartFill, RiUser2Line } from "@remixicon/react";
+import {RiArrowUpDownFill, RiArrowUpLine, RiHammerFill, RiHomeHeartFill, RiUser2Line } from "@remixicon/react";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Brochere from '../Brochere';
@@ -20,7 +20,7 @@ const HomePage = () => {
 
   return (
     <>
-
+<div className="overall_home">
   <div className="overall_front">
      <div className="frontier_page">
     
@@ -57,20 +57,21 @@ const HomePage = () => {
         </div>
         </div>
     </div>
+    
 
-    <div className="slider_data">
-      {/* <div className="slogan_inner"> */}
-          <div className="slogan">WE ARE HERE FOR <span>BUILD</span> YOU UP</div>
-          <div className="main_content">BUILDING EXCELLENCE FROM<div class="centerer">GROUND UP</div></div>
-          <div className="slogan_button">Let's Build</div>
-      {/* </div> */}
-    </div>
-</div>  
+</div> 
 
+     
+
+     
+
+
+
+       
 
     <Brochere/>
     <Footer/>
-    
+</div>    
     </>
   )
 }

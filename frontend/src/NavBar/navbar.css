@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.navbar{
+    background-color: #2d2d2d;
+    width:100%;
+    height:135px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.navbar_container{
+    height:80%;
+    width:86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+
+   
+}
+
+
+.navbar_container .nav_logo{
+    background: url('../Images/SenateImg.png');
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left:20px;
+    height:100px;
+    width:200px;
+    cursor:pointer;
+    position: relative;
+}
+
+
+@media (max-width:767px){
+    .navbar{
+        height:100px;
+        width:100%;
+    }
+
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+ 
+        padding:10px;
+
+    
+
+
+    }
+
+
+    .navbar_container .nav_logo{
+        height:70px;
+        width:140px;
+        background-size: cover;
+        transform: translateX(-15%);
+    }
+}
+
+
+.hamburger_button{
+    background-color: yellow;
+    height:40px;
+    width:40px;
+    display:none;
+    margin-right: 9px !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding:8px 7px;
+
+
+}
+
+
+.hamburger_button .menu{
+    height:90%;
+    width:90%;
+ 
+
+}
+
+
+@media (max-width:767px){
+    .hamburger_button{
+        display: block;
+    }
+}
+
+
+
+.mobile_links{
+    background-color: yellow;
+    position: absolute;
+    top:80px;
+    right:20px;
+    width:110px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding:10px 0px;
+    transition: all .7s ease-in-out;
+}
+
+.mobile_links li{
+    height:40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mobile_links li:hover{
+    background-color: black;
+   
+}
+
+
+
+.mobile_links .link{
+    color:black;
+   
+    
+}
+
+.mobile_links li:hover .link{
+    color:yellow;
+}
+
+

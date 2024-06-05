@@ -149,7 +149,8 @@
 
 @media (max-width:767px){
     .excellence{
-    margin-top: -200px;  
+    margin-top: -300px; 
+    height:120vh;
     }
 
     .excellence_container{
@@ -204,6 +205,7 @@
     }
 
     .excellence_container .excellence_content .e_boxes{
-        height: 800px !important;
+        height: 350px !important;
+        
     }
 }

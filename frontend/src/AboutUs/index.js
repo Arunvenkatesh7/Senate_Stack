@@ -3,11 +3,15 @@ import './about.css'
 import './core_strengths.css'
 import Footer from '../Footer'
 import { RiKeyFill } from '@remixicon/react'
+import NavBar from '../NavBar'
 
 const AboutUs = () => {
   return (
     <>
-    
+
+        <NavBar/>
+
+
         <div className="aboutus">
             <div className="aboutus_image"></div>
             <div className="aboutus_content">

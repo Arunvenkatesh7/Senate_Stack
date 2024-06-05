@@ -12,10 +12,13 @@
 .services_container_all{
     height:600px;
     width:100%;
+    padding-top: 180px;
+    
 }
 
 
 .service_container{
+    
 }
 
 .service_container .headers{
@@ -23,6 +26,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
+   
 }
 
 
@@ -33,6 +38,8 @@
     height:100px;
     max-width: 80%;
     line-height: 45px;
+    z-index: 0;
+   
 }
 
 .service_container .headers h3{
@@ -98,6 +105,7 @@
 
 @media (max-width:767px){
     .services_container_all{
+        padding-top: 120px !important;
 
     }
 
@@ -110,11 +118,13 @@
         display: flex;
         flex-direction: column;
         padding:0;
+        
+        height:250px;
     }
 
     .service_container .headers .header{
         font-size:1.9rem;
-        line-height: 29px;
+        line-height: 33px;
 
         width: 100%;
         max-width: 100%;

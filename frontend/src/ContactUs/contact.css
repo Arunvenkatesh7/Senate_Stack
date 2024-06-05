@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+   
 }
 
 .connect_overall .headers .header{
@@ -20,6 +22,7 @@
     max-width: 100%;
     text-align: center;
     line-height: 44px;
+    z-index: 0;
 }
 
 
@@ -29,7 +32,7 @@
     font-size:.9rem;
     font-weight: 500;
     margin-bottom: 40px;
-    
+    z-index: 0;
 }
 
 
@@ -125,6 +128,7 @@
         justify-content: space-between;
         gap:20px;
         position: relative;
+        margin-top: 150px;
     }
     
     .connect{

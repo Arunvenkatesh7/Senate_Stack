@@ -1,9 +1,12 @@
 import React from 'react'
 import './services.css'
+import NavBar from '../NavBar'
 
 const Services = () => {
   return (
     <>
+    <div className="nav_sep">
+      <NavBar/>
       <div className="services_container_all">
         <div className="service_container">
           <div className="headers">
@@ -43,7 +46,7 @@ const Services = () => {
         </div>
       </div>
     
-    
+      </div>  
     
     </>
   )

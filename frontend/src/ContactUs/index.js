@@ -2,11 +2,13 @@ import React from 'react'
 import { RiMailCheckFill, RiPhoneFill, RiUserLocationFill } from "@remixicon/react";
 import './contact.css'
 import './vtr.css'
+import NavBar from '../NavBar';
 
 const ContactUs = () => {
   return (
     <>
 
+  <NavBar/>
       
 <div className="vtr">
         <div className="vtr_container">
