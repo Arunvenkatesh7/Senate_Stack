@@ -200,6 +200,10 @@ li, .link{
     cursor: pointer;
     z-index: 1001;
     display: none;
+    background-color: #FFF132;
+    color:black;
+    padding:7px;
+    border-radius: 50%;
 }
 
 
@@ -350,5 +354,24 @@ li, .link{
         font-size:2rem;
         text-align: center; 
         line-height: 37px;       
+    }
+}
+
+
+.senate_logo{ 
+    height:100px;
+    width:200px;
+    background: url('../Images/SenateImg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+@media (max-width:767px){
+    .senate_logo{
+        height:60px;
+        width:120px;
     }
 }

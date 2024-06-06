@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
-import {RiMenu2Fill, RiMenu3Fill, RiMenuLine } from "@remixicon/react";
+import { RiMenuLine } from "@remixicon/react";
 
 const NavBar = () => {
 
@@ -32,6 +32,7 @@ const NavBar = () => {
                 <li onClick={()=>{set_Active(1)}}><Link className={`link ${active ===1 ? 'active':''}`} to="/services">Project</Link></li>
                 <li onClick={()=>{set_Active(2)}}><Link className={`link ${active ===2 ? 'active':''}`} to="/aboutus">About</Link></li>
                 <li onClick={()=>{set_Active(3)}}><Link className={`link ${active ===3 ? 'active':''}`} to="/contact" >Contact</Link></li>
+                <li onClick={()=>{set_Active(4)}}><Link className={`link ${active ===4 ? 'active':''}`} to="/clientelle" >Clientelle</Link></li>
             </ul>
           
         </div>

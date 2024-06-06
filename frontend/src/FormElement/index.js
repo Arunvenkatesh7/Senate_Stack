@@ -1,8 +1,41 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './form.css'
 import {RiFacebookLine, RiInstagramLine, RiMailFill} from "@remixicon/react";
+import axios from 'axios';
+
 
 const FormElement = () => {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    address: '',
+    service: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:5000/send', formData);
+      alert('Message sent successfully');
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Error sending message');
+    }
+  };
+
+
+
   return (
     <>
 
@@ -37,33 +70,92 @@ Solid foundations for a brighter future!</h3>
         </div>
 
         <div class="contact-form">
-       
-          
+        <form onSubmit={handleSubmit} autoComplete="off">
+      <h3 className="title">Contact us</h3>
+      <div className="input-container">
+        <input
+          type="text"
+          name="name"
+          className="input"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Name"
+          required
+        />
+        <label htmlFor=""></label>
+        <span>Username</span>
+      </div>
+      <div className="input-container">
+        <input
+          type="email"
+          name="email"
+          className="input"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Email"
+          required
+        />
+        <label htmlFor=""></label>
+        <span>Email</span>
+      </div>
+      <div className="input-container">
+        <input
+          type="tel"
+          name="phone"
+          className="input"
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="Phone"
+        />
+        <label htmlFor=""></label>
+        <span>Phone</span>
+      </div>
+      <div className="input-container">
+        <input
+          type="text"
+          name="address"
+          className="input"
+          value={formData.address}
+          onChange={handleChange}
+          placeholder="Location"
+        />
+        <label htmlFor=""></label>
+        <span>Location</span>
+      </div>
+      <div className="input-container">
+        <select
+          name="service"
+          className="input"
+          value={formData.service}
+          onChange={handleChange}
+          required
+        >
+          <option value="" disabled>Select your service</option>
+          <option className="options" value="design">Design & Built</option>
+          <option className="options" value="construction_management">Construction Management</option>
+          <option className="options" value="project_management">Project Management</option>
+          <option className="options" value="structural_repairs">Structural Repairs</option>
+          <option className="options" value="repairs">Repairs and Refurbishment</option>
+        </select>
+        <label htmlFor=""></label>
+        <span>Service</span>
+      </div>
+      <div className="input-container textarea">
+        <textarea
+          name="message"
+          className="input"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Details here"
+        ></textarea>
+        <label htmlFor=""></label>
+        <span>Message</span>
+      </div>
+      <input type="submit" value="Send" className="btn" />
+    </form>
 
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" placeholder="Username"/>
-              <label for=""></label>
-              <span>Username</span>
-            </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input" placeholder="Email"/>
-              <label for=""></label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" placeholder="phone" />
-              <label for=""></label>
-              <span>Phone</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input" placeholder="Message here"></textarea>
-              <label for=""></label>
-              <span>Message</span>
-            </div>
-            <input type="submit" value="Send" class="btn" />
-          </form>
+
+
         </div>
       </div>
     </div>

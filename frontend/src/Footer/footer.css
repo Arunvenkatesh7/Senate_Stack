@@ -11,7 +11,7 @@
 
 .footer{
     width:100%;
-    height:500px;
+    height:520px;
     background-color: #232222;
     padding:100px;
 }
@@ -163,16 +163,17 @@ h2{
 }
 
 
-.footer_container .sites p{
+.footer_container .sites .site{
     font-size:.74rem;
     font-weight: 500;
     color:rgb(145, 145, 145);
     cursor: pointer;
     transition: all .3s ease;
+    text-decoration: none;
 }
 
 
-.footer_container .sites p:hover{
+.footer_container .sites .site:hover{
     color:yellow
 }
 
@@ -208,17 +209,18 @@ h2{
     color:rgb(145, 145, 145);
 }
 
-.footer_container .ongoing_projects .projects .project h3{
+.footer_container .ongoing_projects .projects .project .linkers{
     color: yellow;
     padding:10px;
     font-size: .8rem;
     font-weight: 600;
     margin-left: -10px;
     cursor:pointer;
+    text-decoration: none;
     
 }
 
-.footer_container .ongoing_projects .projects .project h3:hover{
+.footer_container .ongoing_projects .projects .project .linkers:hover{
         color:white;
 
 }

@@ -12,18 +12,21 @@
 .brochere_container{
     height:70vh;
     width:100%;
+   
+    position: relative;
     
 }
 
 
-.brochere_container .container{
+.brochere_container .b_container{
     height: 100%;
     width:100%;
     display:flex;
     flex-direction: row;
+   
 }
 
-.brochere_container .container .brochere_content{
+.brochere_container .b_container .brochere_content{
     
         width: 50%;
         display: flex;
@@ -32,7 +35,7 @@
   
 }
 
-.brochere_container .container .brochere_content .content{
+.brochere_container .b_container .brochere_content .content{
     margin-left: 100px;
     width:76%;
     height: 350px;
@@ -43,12 +46,12 @@
   
 }
 
-.brochere_container .container .brochere_content .content .title{
-    font-weight: initial;
+.brochere_container .b_container .brochere_content .content .b_title{
+    font-size: 1.9rem;
 }
 
 
-.brochere_container .container .brochere_content .content .content1, .content2{
+.brochere_container .b_container .brochere_content .content .content1, .content2{
     font-weight: initial;
     font-size: 0.87rem;
     color:rgb(61, 61, 61);
@@ -57,7 +60,7 @@
     line-height: 25px;
 }
 
-.brochere_container .container .brochere_image{
+.brochere_container .b_container .brochere_image{
     width:50%;
     height:100%; 
     display:flex;
@@ -65,10 +68,10 @@
     justify-content: center;  
 }
 
-.brochere_container .container .brochere_image .image{
+.brochere_container .b_container .brochere_image .image{
     width:80%;
     height:70%; 
-    background-color: blue;
+   
     background: url("../Images/Image7.jpg");
      background-position: center center;
    background-repeat:no-repeat;
@@ -84,13 +87,13 @@
         height:100vh;
     }
 
-    .brochere_container .container{
+    .brochere_container .b_container{
      
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .brochere_container .container .brochere_content{
+    .brochere_container .b_container .brochere_content{
         display: flex;
         margin-top:-20px;
         height:60%;
@@ -100,14 +103,14 @@
        
     }
 
-    .brochere_container .container .brochere_image{
+    .brochere_container .b_container .brochere_image{
        
         width:100%;
         height:40%;
     }
 
 
-    .brochere_container .container .brochere_content .content{
+    .brochere_container .b_container .brochere_content .content{
         display: flex;
         background-color: azure;
         margin-left: 0px !important;

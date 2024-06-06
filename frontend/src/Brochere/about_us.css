@@ -11,11 +11,12 @@
 
 .about_container{
    
-    height:90vh;
+    height:100vh;
     width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 
 
 
@@ -26,7 +27,8 @@
 
     display:flex;
     flex-direction: row;
-    height: 80%;
+    height: 8%;
+    
 
 }
 
@@ -34,23 +36,27 @@
 .about_container .image_container{
     position: relative;
     height:100%;
-    width:50%; 
-  
+    width:55%; 
+ 
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 50px;
+   
+    
       
 }
 
 .about_container .image{
     position: relative;
     height: 400px;
-    width: 78%;
+    width: 100%;
     background:url('../Images/consimage.jpg');
     background-position: center center;
     background-repeat:no-repeat;
     background-size:cover;
-    margin-left: 90px;
+    margin-left: 30px;
+   
 
 }
 
@@ -115,6 +121,8 @@
     gap:6px;
     font-weight: 600;
     border-radius: 15px;
+    text-decoration: none;
+    color:black;
 }
 
 

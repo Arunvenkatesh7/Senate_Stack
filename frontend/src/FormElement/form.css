@@ -359,6 +359,18 @@ textarea.input {
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
+    
+ 
+  }
+
+
+  @media (max-width:767px) {
+    form,
+  .contact-info {
+    padding: 1.7rem .7rem;
+    
+ 
+  }
   }
 
   .text,
@@ -461,4 +473,17 @@ textarea.input {
     .form_headers{
       margin-top: -140px;
     }
+}
+
+
+.options{
+  background-color: #000;
+  color:yellow;
+  cursor: pointer;
+}
+
+.options:hover{
+  background-color: yellow;
+  color:black;
+  cursor: pointer;
 }

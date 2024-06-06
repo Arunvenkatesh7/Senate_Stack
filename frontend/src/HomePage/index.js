@@ -1,10 +1,13 @@
 import React from 'react'
 import './home.css'
-import {RiArrowUpDownFill, RiArrowUpLine, RiHammerFill, RiHomeHeartFill, RiUser2Line } from "@remixicon/react";
+import { RiMenuLine} from "@remixicon/react";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Brochere from '../Brochere';
 import Footer from '../Footer';
+import BootSlider from '../BootSlider'
+
+
 
 
 const HomePage = () => {
@@ -23,6 +26,8 @@ const HomePage = () => {
     }
 
 
+
+
   return (
     <>
 <div className="overall_home">
@@ -31,11 +36,11 @@ const HomePage = () => {
     
         <div className="blacker">  
           <div className='header'>
-            <Link className='link logo' href='#'>
-            <RiHomeHeartFill/>
-            <span>Senate</span>
-            </Link>
+            <div className='senate_logo'>
+            <Link to='/' href='#'>
 
+            </Link>
+            </div>
 
 
             <ul className="nav_links">              
@@ -43,6 +48,8 @@ const HomePage = () => {
                 <li onClick={()=>{set_Active(1)}}><Link className={`link ${active ===1 ? 'active':''}`} to="/services">Project</Link></li>
                 <li onClick={()=>{set_Active(2)}}><Link className={`link ${active ===2 ? 'active':''}`} to="/aboutus">About</Link></li>
                 <li onClick={()=>{set_Active(3)}}><Link className={`link ${active ===3 ? 'active':''}`} to="/contact" >Contact</Link></li>
+                <li onClick={()=>{set_Active(4)}}><Link className={`link ${active ===4 ? 'active':''}`} to="/clientelle" >Clientelle</Link></li>
+
             </ul>
     {isVisible?<ul className="mobile_nav_links">              
                 <li><Link className='link active' to="/">Home</Link></li>
@@ -62,8 +69,8 @@ const HomePage = () => {
 
 
             <div className="reglogbuttons">
-                <div className='reglogbutton'> <Link className='link' to="/contact"><span class="contact_button">Contact</span></Link> </div>
-                <div onClick={showHideNavbar} className="hamburger_menu"><RiHammerFill/></div>
+                
+                <div onClick={showHideNavbar} className="hamburger_menu"><RiMenuLine/></div>
             </div>
 
         </div>
@@ -77,8 +84,9 @@ const HomePage = () => {
 
 </div> 
 
-     
 
+
+        
      
 
 
@@ -86,6 +94,11 @@ const HomePage = () => {
        
 
     <Brochere/>
+
+
+
+    <BootSlider/>
+
     <Footer/>
 </div>    
     </>

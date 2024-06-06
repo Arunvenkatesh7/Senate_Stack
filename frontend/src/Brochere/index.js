@@ -24,7 +24,7 @@ const Brochere = () => {
                     <div className="content2">Senate Engineering was founded in the year 2018 as a core construction company and
                     quickly transformed into a multi-dimensional construction company with strong expertise in various facets of construction. 
                     Engineers with 4 to 20 years of handson experience in different facades of the construction industry.</div> 
-                    <div className="download_link"><RiDownloadFill className='download_icon'/>Download our Brochere</div> 
+                    <a href='/frontend/public/favicon.ico' download='/frontend/public/robots.txt' className="download_link"><RiDownloadFill className='download_icon'/>Download our Brochere</a> 
                 </div>              
             </div>
         </div>
@@ -37,14 +37,14 @@ const Brochere = () => {
 
 
 
-        <div className="brochere_container">
+    <div className="brochere_container">
 
-            <div className="container">
-
+        <div className="b_container">
+           
 
                 <div className="brochere_content">
                     <div className="content">
-                        <h1 className="title">WHY CHOOSE US?</h1>
+                        <div className="b_title">WHY CHOOSE US?</div>
                         <div className="content1">Our quality focus, customer-focused business activities and efficient process mechanism
                          ensure our customers get outstanding value for money, every time.</div>
                          <div className="content2">We believe in providing customized solutions to
@@ -59,10 +59,12 @@ const Brochere = () => {
                     <div className="image"></div>
                 </div>
 
+                </div>
+
             </div>
 
 
-        </div>
+        
 
 
 

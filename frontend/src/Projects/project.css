@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+
+.clientelle{
+   
+    height:auto;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+  
+
+}
+
+.clientelle .client_container{
+
+    height:90%;
+    width:90%;
+    margin-top: 200px;
+    
+}
+
+
+.clientelle .client_container .client_headers{
+   
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+
+.clientelle .client_container .client_headers .client_header{
+  
+    font-size: 2.7rem;
+    font-weight: 700;
+    
+}
+
+
+.client_container .client_headers .client_subheader{
+    text-align: center;
+    color:rgb(102, 101, 101);
+    font-size:1rem;
+    font-weight: 500;
+    z-index: 0;
+}
+
+
+.project{
+   
+    height:auto;
+    width:auto;
+    
+
+
+}
+
+.project .project_headers{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.project .project_header{
+ 
+    color:black;
+    font-size: 2.1rem;
+    font-weight: 600;
+
+}
+
+
+.project .project_subheader{
+    text-align: center;
+    color:rgb(102, 101, 101);
+    font-size:1rem;
+    font-weight: 500;
+    z-index: 0;
+    max-width:800px;
+    line-height: 23px;
+}
+
+
+.project .pro_images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 16px;
+    padding:40px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project .pro_images .pro_image{
+    height:280px;
+    width:280px;
+    border-radius: 8px;
+    background: url('../Images/Clientelle/Adayar/Adyar-image3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    
+    
+}
+
+.project .pro_images .pro_image:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width:767px){
+    .clientelle{
+        
+        
+    }
+
+    .client_container{
+     
+        margin-top: 140px !important;
+       
+
+    }
+
+    .client_container .client_headers{
+       
+        height:260px !important;
+        gap:10px !important;
+
+    }
+
+    .client_container .client_headers .client_header{
+        font-size: 2.3rem !important;
+        line-height: 42px;
+        text-align: center;
+    }
+
+
+    .project{
+    
+       
+        flex-direction: column;
+        margin-bottom: 70px;
+       
+       
+    }
+
+    .project .project_headers{
+       
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .project .project_headers .project_header{
+        text-align: center;
+        line-height: 37px;
+    }
+
+
+    .project .pro_images{
+       
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+
+}
+
+
+
+.ongoing_container{
+    height:90%;
+    width:90%;
+
+}
+
+
+.ongoing_container .ongoing_headers{
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.ongoing_container .ongoing_headers .ongoing_header{
+    font-size: 2.7rem;
+    font-weight: 700;   
+}
+
+
+.ongoing_container .ongoing_headers .ongoing_subheader{
+    text-align: center;
+    color:rgb(102, 101, 101);
+    font-size:1rem;
+    font-weight: 500;
+    z-index: 0;
+}
+
+
+
+
+
+@media (max-width:767px) {
+    .ongoing_container .ongoing_headers{
+       height:190px;
+
+    }
+
+    .ongoing_container .ongoing_headers .ongoing_header{
+        font-size: 2.3rem !important;
+        line-height: 42px;
+        text-align: center;
+    }
+}
