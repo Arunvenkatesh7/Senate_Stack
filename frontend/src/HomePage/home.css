@@ -53,6 +53,20 @@ li, .link{
 
 }
 
+
+.link.active{
+    color:#FFF132;
+}
+
+
+
+
+@media (max-width:767px){
+    .mobile_nav_links .link{
+        color:black;
+    }
+}
+
 .link:hover {
     color:#FFF132;
 }
@@ -97,6 +111,7 @@ li, .link{
     gap:39px;
     width:410px;
     transition: all .50s ease;
+    
 
 
 }
@@ -122,6 +137,7 @@ li, .link{
     justify-content: center;
     align-items: center;
     transition: all .5s ease;
+    color:white;
  
 }
 
@@ -306,4 +322,33 @@ li, .link{
 .slider_button:hover{
     background-color: black;
     color:yellow;
+}
+
+
+
+@media (max-width:767px){
+    .slider_datas{
+        
+        top:150px;
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    .slider_datas .slider_container{
+       
+        height:96%;
+    }
+
+    .slider_datas .slider_container .slider_slogan{
+        font-size: 1.2rem;
+    }
+
+    .slider_datas .slider_container .slider_content{
+        font-size:2rem;
+        text-align: center; 
+        line-height: 37px;       
+    }
 }

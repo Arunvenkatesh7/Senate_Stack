@@ -10,12 +10,17 @@ import Footer from '../Footer';
 const HomePage = () => {
 
     const [isVisible,setIsVisible] =useState(false);
+    const [active,setActive]=useState(0);
+    
+    const set_Active=(index)=>{
+        setActive(index);
+    }
+
 
 
     const showHideNavbar =() =>{
         setIsVisible(!isVisible);
     }
-
 
 
   return (
@@ -34,10 +39,10 @@ const HomePage = () => {
 
 
             <ul className="nav_links">              
-                <li><Link className='link active' to="/">Home</Link></li>
-                <li><Link className='link' to="/services">Project</Link></li>
-                <li><Link className='link' to="/aboutus">About</Link></li>
-                <li><Link className='link' to="/contact" >Contact</Link></li>
+            <li onClick={()=>{set_Active(0)}}><Link className={`link ${active ===0 ? 'active':''}`} to="/">Home</Link></li>
+                <li onClick={()=>{set_Active(1)}}><Link className={`link ${active ===1 ? 'active':''}`} to="/services">Project</Link></li>
+                <li onClick={()=>{set_Active(2)}}><Link className={`link ${active ===2 ? 'active':''}`} to="/aboutus">About</Link></li>
+                <li onClick={()=>{set_Active(3)}}><Link className={`link ${active ===3 ? 'active':''}`} to="/contact" >Contact</Link></li>
             </ul>
     {isVisible?<ul className="mobile_nav_links">              
                 <li><Link className='link active' to="/">Home</Link></li>
